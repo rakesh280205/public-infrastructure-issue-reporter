@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Public Infrastructure Issue Reporter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Public Infrastructure Issue Reporter</h2>
+
+    <form id="issueForm" enctype="multipart/form-data">
+
+        <input type="text" name="title" id="issueTitle" placeholder="Issue Title" required>
+
+        <textarea name="description" placeholder="Issue Description" required></textarea>
+
+        <select name="category" id="category" required>
+            <option value="">Select Category</option>
+            <option value="Road">Road</option>
+            <option value="Streetlight">Streetlight</option>
+            <option value="Drainage">Drainage</option>
+            <option value="Water">Water</option>
+            <option value="Bad Infrastructure">Bad Infrastructure</option>
+            <option value="Garbage">Garbage</option>
+            <option value="Pothole">Pothole</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <input type="number" name="ward" id="ward" placeholder="Ward Number" required>
+        <input type="text" name="address" id="address" placeholder="Full Address (Street, Area, Landmark)" required>
+
+
+        <input type="file" name="image" accept="image/*">
+
+        <!-- 🔴 DUPLICATE WARNING -->
+        <div id="duplicateWarning"></div>
+
+        <button type="submit" id="submitBtn">
+            Submit Issue
+        </button>
+
+    </form>
+
+    <a href="user.html">View Reported Issues</a>
+    <br><br>
+    <a href="analytics.html">📊 View Issue Analytics</a>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+
+
+</html>

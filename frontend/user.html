@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reported Issues</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Reported Infrastructure Issues</h2>
+    <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option value="Road">Road</option>
+        <option value="Streetlight">Streetlight</option>
+        <option value="Drainage">Drainage</option>
+        <option value="Water">Water</option>
+        <option value="Bad Infrastructure">Bad Infrastructure</option>
+        <option value="Garbage">Garbage</option>
+        <option value="Pothole">Pothole</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <select id="statusFilter">
+        <option value="">All Status</option>
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Resolved">Resolved</option>
+    </select>
+
+    <input type="number" id="wardFilter" placeholder="Filter by Ward">
+
+    <button onclick="applyFilters()">Apply Filter</button>
+    <button onclick="clearFilters()">Clear</button>
+    <a href="index.html">Back</a>
+
+    <div id="issues"></div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
