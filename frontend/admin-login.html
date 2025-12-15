@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Login - Admin</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    <div class="app-bar">
+      <button class="back-btn" id="backBtn">←</button>
+      <div class="back-title" id="appTitle">Login</div>
+    </div>
+
+    <div class="mobile-shell">
+      <div class="logo-wrap">
+        <img src="image.jpeg" alt="logo">
+      </div>
+
+      <div class="card">
+        <h2 id="login-heading">Login</h2>
+        <div id="login-sub">Please enter your details</div>
+
+        <div class="form-row">
+          <div class="field">
+            <input id="adminId" class="input" type="text" placeholder="Admin ID">
+            <div id="adminError" class="error" style="display:none"></div>
+          </div>
+
+          <div class="field">
+            <input id="password" class="input" type="password" placeholder="Password">
+            <button id="togglePwd" class="eye-btn">👁️</button>
+          </div>
+
+          <a href="#" class="forgot" id="forgotLink">Forgot Password?</a>
+
+          <button id="signBtn" class="sign-btn">SIGN IN</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
